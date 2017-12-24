@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*-----------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  background-image: url("../images/pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  background: url("../images/header-bg.png") bottom center no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  min-height: 53vw;
+  align-items: center;
+}
+h1 {
+  font-size: 86px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 2em 25%;
+  width: 100%;
+}
+.red-color {
+  color: #f0002f;
+  font-weight: 600;
+  display: block;
+}
+.logo {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  height: 60px;
+  width: 200px;
+
+}
+.logo img {
+  height: auto;
+  width: 100%;
+}
+main {
+  max-width: 1200px;
+  padding: 30px;
+}
+.two-columns {
+  display: flex;
+  flex-direction: row;
+}
+.two-columns > li {
+  width: 50%;
+  padding: 20px;
+}
+.three-columns {
+  display: flex;
+  flex-direction: row;
+}
+.three-columns > li {
+  width: 33.3%;
+  padding: 20px;
+}
+h2 {
+  font-size: 2rem;
+  color: #f0002f;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1400px) {
+  body {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    padding: 2em 10%;
+    font-size: 32px;
+  }
+  .two-columns,
+  .three-columns {
+    flex-wrap: wrap;
+  }
+  .two-columns > li,
+  .three-columns > li {
+    width: 100%;
+  }
+
+}
